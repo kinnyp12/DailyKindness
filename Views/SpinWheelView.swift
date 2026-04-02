@@ -110,17 +110,12 @@ struct SpinWheelView: View {
             .padding(.vertical, 18)
             .background(
                 controller.isSpinning
-                    ? AnyShapeStyle(Color.gray)
-                    : AnyShapeStyle(
-                        LinearGradient(
-                            colors: [
-                                Color(red: 0.96, green: 0.45, blue: 0.65),
-                                Color(red: 0.56, green: 0.42, blue: 0.86)
-                            ],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
+                    ? Color.gray
+                    : LinearGradient(
+                        colors: [Color(red: 0.96, green: 0.45, blue: 0.65), Color(red: 0.56, green: 0.42, blue: 0.86)],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                      )
             )
             .foregroundStyle(.white)
             .clipShape(RoundedRectangle(cornerRadius: 18))

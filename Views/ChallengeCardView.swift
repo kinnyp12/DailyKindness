@@ -130,7 +130,7 @@ struct CompletionSheet: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
 
-                Text("\(challenge.title)")
+                Text(""\(challenge.title)"")
                     .font(.headline)
                     .foregroundStyle(challenge.category.color)
                     .multilineTextAlignment(.center)
